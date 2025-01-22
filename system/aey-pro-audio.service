@@ -1,0 +1,8 @@
+[Unit]
+Description=Pro audio setup
+ 
+[Service]
+ExecStart=/usr/bin/aey-pro-audio-setup
+ 
+[Install]
+WantedBy=multi-user.target

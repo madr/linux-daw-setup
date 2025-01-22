@@ -1,0 +1,49 @@
+Pro audio setup
+===============
+
+Asuming Arch linux, or some distro based on Arch linux.
+
+Recommended reading
+-------------------
+
+- https://wiki.archlinux.org/title/Professional_audio#System_configuration
+- https://wiki.archlinux.org/title/Professional_audio#PipeWire-only
+
+Recommended utils
+-----------------
+
+Must-have, unfortunately in the Arch User Repository:
+
+aur/rtcqs:
+    Checklist for pro audio
+
+Official packages, installable using `pacman -S`.
+
+extra/alsa-scarlett-gui:
+    Software controls for Focusrite audio interfaces
+
+extra/pavucontrol:
+    For setting profile to Pro audio on audio interfaces
+
+extra/helvum:
+    Route audio between sinks
+
+extra/reaper:
+    Excellent DAW (nonfree)
+
+extra/surge-xt:
+    Great softsynth
+
+extra/rosegarden:
+    Song writing app
+
+More apps and tools:
+
+- https://github.com/nodiscc/awesome-linuxaudio
+- https://github.com/robbert-vdh/yabridge
+
+Other considerations
+--------------------
+
+- For a true purist, use `labwc` Wayland compositor.
+- Xfce is a lightweight, feature-complete desktop environment.
