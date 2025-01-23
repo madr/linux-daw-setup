@@ -1,0 +1,2 @@
+#!/bin/bash
+grim -g "$(slurp -b '#03061188')" $HOME/Screenshots/$(date -u +%Y-%m-%dT%H:%M:%S).grim.png
