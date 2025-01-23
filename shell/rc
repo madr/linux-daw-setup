@@ -1,3 +1,10 @@
-export BEMENU_OPTS="-H 28 --ch 15 --hp 5 --fn 'Roboto 10' --nb '#030611ff' --tf '#c70039ff' --tb '#030611ff' --hf '#ffbf00ff' --cw 2 -p '' --ab '#030611ff' --fb '#030611ff' --hb '#030611ff'"
-
 export PIPEWIRE_LATENCY="128/48000"
+
+export BEMENU_OPTS="-H 28 --ch 15 --hp 5 --fn 'Roboto 10' --nb '#030611ff' --tf '#c70039ff' --tb '#030611ff' --hf '#ffbf00ff' --cw 2 -p '' --ab '#030611ff' --fb '#030611ff' --hb '#030611ff'"
+export PATH=$PATH:$HOME/.cargo/bin:$HOME/.local/bin
+export EDITOR=helix
+
+alias hx="helix"
+alias ll="ls -ahl"
+
+PS1='\u:\W → '
