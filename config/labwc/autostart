@@ -1,5 +1,6 @@
 yambar >/dev/null 2>&1 &
-swaybg -i ~/Nextcloud/wallpapers/lava012.jpg -m fill >/dev/null 2>&1 &
+swaybg -c '#99aaaa' >/dev/null 2>&1 &
+#swaybg -i ~/your-fancy-image.jpg -m fill >/dev/null 2>&1 &
 swayidle -w \
     timeout 300 'waylock' \
     before-sleep 'waylock' >/dev/null 2>&1 &
