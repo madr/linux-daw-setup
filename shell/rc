@@ -1,1 +1,3 @@
+export BEMENU_OPTS="-H 28 --ch 15 --hp 5 --fn 'Roboto 10' --nb '#030611ff' --tf '#c70039ff' --tb '#030611ff' --hf '#ffbf00ff' --cw 2 -p '' --ab '#030611ff' --fb '#030611ff' --hb '#030611ff'"
+
 export PIPEWIRE_LATENCY="128/48000"
