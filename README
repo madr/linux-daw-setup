@@ -47,3 +47,6 @@ Other considerations
 
 - For a true purist, use `labwc` Wayland compositor.
 - Xfce is a lightweight, feature-complete desktop environment.
+
+Lastly, pick a neat OpenBox3 theme:
+https://github.com/addy-dclxvi/openbox-theme-collections/tree/master
