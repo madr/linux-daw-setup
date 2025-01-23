@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+    <menu id="root-menu" label="OpenBox 3">
+        <menu id="1" label="Development">
+            <item label="IDLE (Python IDE)"> <action name="Execute">
+                <execute>idle</execute>
+            </action> </item>
+            <item label="Python"> <action name="Execute">
+                <execute>alacritty -e python</execute>
+            </action> </item>
+            <item label="Zed"> <action name="Execute">
+                <execute>zeditor</execute>
+            </action> </item>
+        </menu>
+        <menu id="2" label="Editors">
+            <item label="Helix"> <action name="Execute">
+                <execute>alacritty -e helix</execute>
+            </action> </item>
+        </menu>
+        <menu id="18" label="Games">
+            <menu id="9" label="Adventure">
+                <item label="Prism Launcher"> <action name="Execute">
+                    <execute>flatpak run --branch=stable --arch=x86_64 --command=prismlauncher --file-forwarding org.prismlauncher.PrismLauncher @@u</execute>
+                </action> </item>
+                <item label="Sclient"> <action name="Execute">
+                    <execute>sclient</execute>
+                </action> </item>
+            </menu>
+            <menu id="10" label="Arcade">
+                <item label="PacMan"> <action name="Execute">
+                    <execute>pacman</execute>
+                </action> </item>
+            </menu>
+            <item label="Minecraft Bedrock Launcher"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=mcpelauncher-ui-qt --file-forwarding io.mrarm.mcpelauncher @@u</execute>
+            </action> </item>
+        </menu>
+        <menu id="6" label="Graphics">
+            <item label="Inkscape"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=inkscape --file-forwarding org.inkscape.Inkscape @@</execute>
+            </action> </item>
+            <item label="Krita"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=krita --file-forwarding org.kde.krita @@</execute>
+            </action> </item>
+        </menu>
+        <menu id="7" label="Multimedia">
+            <item label="ALSA Scarlett2 Control Panel"> <action name="Execute">
+                <execute>alsa-scarlett-gui</execute>
+            </action> </item>
+            <item label="Helvum"> <action name="Execute">
+                <execute>helvum</execute>
+            </action> </item>
+            <item label="Spotify"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=spotify --file-forwarding com.spotify.Client @@u</execute>
+            </action> </item>
+            <item label="VLC media player"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=/app/bin/vlc --file-forwarding org.videolan.VLC --started-from-file @@u</execute>
+            </action> </item>
+            <item label="Volume Control"> <action name="Execute">
+                <execute>pavucontrol</execute>
+            </action> </item>
+        </menu>
+        <menu id="5" label="Network">
+            <item label="Avahi SSH Server Browser"> <action name="Execute">
+                <execute>bssh</execute>
+            </action> </item>
+            <item label="Avahi VNC Server Browser"> <action name="Execute">
+                <execute>bvnc</execute>
+            </action> </item>
+            <item label="Brave"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=brave --file-forwarding com.brave.Browser @@u</execute>
+            </action> </item>
+        </menu>
+        <menu id="3" label="Office">
+            <item label="LibreOffice"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=libreoffice --file-forwarding org.libreoffice.LibreOffice @@u</execute>
+            </action> </item>
+            <item label="LibreOffice Base"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=libreoffice --file-forwarding org.libreoffice.LibreOffice --base @@u</execute>
+            </action> </item>
+            <item label="LibreOffice Calc"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=libreoffice --file-forwarding org.libreoffice.LibreOffice --calc @@u</execute>
+            </action> </item>
+            <item label="LibreOffice Draw"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=libreoffice --file-forwarding org.libreoffice.LibreOffice --draw @@u</execute>
+            </action> </item>
+            <item label="LibreOffice Impress"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=libreoffice --file-forwarding org.libreoffice.LibreOffice --impress @@u</execute>
+            </action> </item>
+            <item label="LibreOffice Math"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=libreoffice --file-forwarding org.libreoffice.LibreOffice --math @@u</execute>
+            </action> </item>
+            <item label="LibreOffice Writer"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=libreoffice --file-forwarding org.libreoffice.LibreOffice --writer @@u</execute>
+            </action> </item>
+        </menu>
+        <menu id="19" label="Shells">
+            <item label="Alacritty"> <action name="Execute">
+                <execute>alacritty</execute>
+            </action> </item>
+            <item label="Foot"> <action name="Execute">
+                <execute>foot</execute>
+            </action> </item>
+            <item label="Foot Client"> <action name="Execute">
+                <execute>footclient</execute>
+            </action> </item>
+            <item label="Foot Server"> <action name="Execute">
+                <execute>foot --server</execute>
+            </action> </item>
+            <item label="GIT"> <action name="Execute">
+                <execute>alacritty -e git</execute>
+            </action> </item>
+            <item label="Thunar File Manager"> <action name="Execute">
+                <execute>thunar</execute>
+            </action> </item>
+        </menu>
+        <menu id="37" label="System">
+            <menu id="36" label="Settings">
+                <menu id="21" label="GNOME">
+                    <item label="Advanced Network Configuration"> <action name="Execute">
+                        <execute>nm-connection-editor</execute>
+                    </action> </item>
+                </menu>
+                <item label="Manage Printing"> <action name="Execute">
+                    <execute>xdg-open http://localhost:631/</execute>
+                </action> </item>
+                <item label="Removable Drives and Media"> <action name="Execute">
+                    <execute>thunar-volman-settings</execute>
+                </action> </item>
+                <item label="Thunar Preferences"> <action name="Execute">
+                    <execute>thunar-settings</execute>
+                </action> </item>
+                <item label="TLP UI"> <action name="Execute">
+                    <execute>flatpak run --branch=stable --arch=x86_64 --command=tlpui com.github.d4nj1.tlpui</execute>
+                </action> </item>
+            </menu>
+            <item label="Avahi Zeroconf Browser"> <action name="Execute">
+                <execute>avahi-discover</execute>
+            </action> </item>
+            <item label="btop++"> <action name="Execute">
+                <execute>alacritty -e btop</execute>
+            </action> </item>
+            <item label="pstree"> <action name="Execute">
+                <execute>alacritty -e pstree</execute>
+            </action> </item>
+            <item label="pstree"> <action name="Execute">
+                <execute>alacritty -e pstree.x11</execute>
+            </action> </item>
+            <item label="rtcqs"> <action name="Execute">
+                <execute>rtcqs_gui</execute>
+            </action> </item>
+            <item label="Top"> <action name="Execute">
+                <execute>alacritty -e top</execute>
+            </action> </item>
+            <item label="Yambar"> <action name="Execute">
+                <execute>yambar</execute>
+            </action> </item>
+        </menu>
+        <menu id="38" label="Utilities">
+            <item label="About Xfce"> <action name="Execute">
+                <execute>xfce4-about</execute>
+            </action> </item>
+            <item label="Flatseal"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=com.github.tchx84.Flatseal com.github.tchx84.Flatseal</execute>
+            </action> </item>
+            <item label="Fonts"> <action name="Execute">
+                <execute>flatpak run --branch=stable --arch=x86_64 --command=gnome-font-viewer --file-forwarding org.gnome.font-viewer @@u</execute>
+            </action> </item>
+            <item label="Info"> <action name="Execute">
+                <execute>alacritty -e info</execute>
+            </action> </item>
+        </menu>
+        <separator/>
+        <menu id="40" label="OpenBox">
+            <menu id="client-list-menu"/>
+            <item label="Reconfigure"> <action name="Reconfigure"/> </item>
+            <separator/>
+            <item label="Exit"> <action name="Exit"/> </item>
+        </menu>
+    </menu>
+</openbox_menu>
