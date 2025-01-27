@@ -42,10 +42,49 @@ More apps and tools:
 - https://github.com/nodiscc/awesome-linuxaudio
 - https://github.com/robbert-vdh/yabridge
 
+Provided desktop setup
+----------------------
+
+extra/labwc:
+    Stacking window manager, as vanilla as it gets. Idles at 73MB RAM on init
+    by the provided config.
+
+extra/bemenu:
+    Lightweight app launcher, replaces the yambar top panel if activated in
+    provided config. Can be skipped.
+
+aur/yambar-wayland:
+    Panel with customizable polling intervals for all components, which makes
+    it suitable for DAW:s. The provided config of this repo consumes 18MB of RAM.
+    Can be skipped.
+
+extra/{slurp,grim}:
+    Screen shot utilites, region or whole screen. Can be skipped.
+
+extra/{imagemagick,wl-copy}:
+    Needed to enable color picker. Can be skipped.
+
+extra/extra/ttf-font-awesome:
+    Icons in yambar. Can be skipped.
+
+Keyboard shortcuts:
+
+| Key               | Description                                      |
+|-------------------|--------------------------------------------------|
+| SUPER + Space     | Run app                                          |
+| SUPER + Tab       | Loop between workspaces                          |
+| Alt + Tab         | Loop between windows                             |
+| SUPER + q         | Close active window                              |
+| SUPER + Left      | Snap window to left half of screen               |
+| SUPER + Right     | Snap window to right half of screen              |
+| SUPER + c         | Pick color on screen and copy to clipboard       |
+| SUPER + PrintSc   | Select screen region and save to ~/Screenshots   |
+| PrintSc           | Pick entire screen and save to ~/Screenshots     |
+
 Other considerations
 --------------------
 
-- For a true purist, use `labwc` Wayland compositor.
+- For a true purist, keep the `labwc` Wayland compositor.
 - Xfce is a lightweight, feature-complete desktop environment.
 
 Lastly, pick a neat OpenBox3 theme:
