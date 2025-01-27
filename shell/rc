@@ -1,10 +1,9 @@
-export PIPEWIRE_LATENCY="128/48000"
+# Path of least resistance latency config. For more fine tuning, read up on
+# pipewire configuration.
+export PIPEWIRE_LATENCY="64/48000"
 
-export BEMENU_OPTS="-H 28 --ch 15 --hp 5 --fn 'Roboto 10' --nb '#030611ff' --tf '#c70039ff' --tb '#030611ff' --hf '#ffbf00ff' --cw 2 -p '' --ab '#030611ff' --fb '#030611ff' --hb '#030611ff'"
-export PATH=$PATH:$HOME/.cargo/bin:$HOME/.local/bin
-export EDITOR=helix
+# Extend PATH to include user scripts, create the folder if it does not exist
+export BEMENU_OPTS="-H 28 --ch 15 --hp 5 --fn 'OpenSans 10' --nb '#1f1f1fff' --tf '#c70039ff' --tb '#1f1f1fff' --hf '#ffbf00ff' --cw 2 -p '' --ab '#1f1f1fff' --fb '#1f1f1fff' --hb '#1f1f1fff'"
 
-alias hx="helix"
-alias ll="ls -ahl"
-
-PS1='\u:\W → '
+# Extend PATH to include user scripts. Create the folder if it does not exist
+export PATH=$PATH:$HOME/.local/bin
