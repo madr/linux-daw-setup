@@ -5,7 +5,7 @@
 # the sway-xkb module with the xkb module.
 
 # fonts we'll be re-using here and there
-awesome: &awesome Font Awesome 6 Free:style=solid:pixelsize=11
+awesome: &awesome Font Awesome 6 Free:style=solid:pixelsize=12
 awesome_brands: &awesome_brands Font Awesome 6 Brands:pixelsize=13
 
 std_underline: &std_underline {underline: { size: 2, color: ff0000ff}}
@@ -14,27 +14,28 @@ std_underline: &std_underline {underline: { size: 2, color: ff0000ff}}
 bar:
   height: 28
   location: top
-  spacing: 8
-  margin: 5
+  spacing: 10
+  margin: 10
 
   # Default font
-  font: Roboto:size=13
+  font: OpenSans:size=12
 
-  foreground: ffac1cff
-  background: 030611ff
+  foreground: ddddddff
+  background: 1f1f1fff
 
   border:
     width: 0
-    color: 999999cc
     margin: 0
 
   center:
     - clock:
         time-format: "%H:%M"
-        date-format: "%Y-%m-%d"
+        date-format: "%d %-b %Y"
         content:
-          - string: {text: "{time}", foreground: e97451ff}
-          - string: {text: "{date}", left-margin: 5, foreground: f2d2bdff}
+          - string: {text: , font: *awesome, right-margin: 5, foreground: 616161ff}
+          - string: {text: "{time}", right-margin: 15}
+          - string: {text: , font: *awesome, right-margin: 5, foreground: F62B5Aff}
+          - string: {text: "{date}"}
   left:
     - label:
         content:
@@ -47,13 +48,13 @@ bar:
           map:
             conditions:
               id < 0:
-                - string: { text: , font: *awesome, foreground: fbceb1ff}
-                - string: {text: " {cpu}%", foreground: fbceb1ff}
+                - string: { text: , right-margin: 5, font: *awesome, foreground: 13C299ff}
+                - string: {text: "{cpu}%"}
     - mem:
         poll-interval: 5000
         content:
-          - string: { text: , font: *awesome, foreground: e3963eff}
-          - string: {text: " {used:gb}G", foreground: e3963eff}
+          - string: { text: , right-margin: 5, font: *awesome, foreground: E3C401ff}
+          - string: {text: "{used:gb}G"}
     #- xkb:
     #    content:
     #      string: {text: "{symbol}"}
@@ -104,19 +105,19 @@ bar:
             conditions:
               name == wlp4s0:
                 map:
-                  default: {string: {text: , font: *awesome, foreground: ffffff66}}
+                  default: {string: {text: , font: *awesome, foreground: 24ACD4ff}}
                   conditions:
                     state == down: {string: {text: , font: *awesome}}
                     state == up:
                       map:
                         default:
-                          - string: {text: , font: *awesome}
-                          - string: {text: " {ssid}"}
+                          - string: {text: , font: *awesome, foreground: 24ACD4ff}
+                          - string: {left-margin: 5, text: "{ssid}"}
 
                         conditions:
                           ipv4 == "":
-                            - string: {text: , font: *awesome, foreground: ffffff66}
-                            - string: {text: " {ssid}"}
+                            - string: {text: , font: *awesome, foreground: 24ACD4ff}
+                            - string: {left-margin: 5, text: "{ssid}"}
     - battery:
         name: BAT0
         poll-interval: 60000
@@ -128,16 +129,16 @@ bar:
                     tag: capacity
                     items:
                       - string: {text: , foreground: ff0000ff, font: *awesome}
-                      - string: {text: , foreground: ffa600ff, font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                - string: {text: "{capacity}%"}
+                      - string: {text: , foreground: ff0000ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                - string: {left-margin: 5, text: "{capacity}%"}
         content:
           map:
             conditions:
@@ -156,16 +157,16 @@ bar:
                     tag: capacity
                     items:
                       - string: {text: , foreground: ff0000ff, font: *awesome}
-                      - string: {text: , foreground: ffa600ff, font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                - string: {text: " {capacity}%"}
+                      - string: {text: , foreground: ff0000ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                      - string: {text: , foreground: 47B413ff, font: *awesome}
+                - string: {left-margin: 5, text: "{capacity}%"}
     - battery:
         name: BAT1
         poll-interval: 60000
@@ -177,16 +178,16 @@ bar:
                     tag: capacity
                     items:
                       - string: {text: , foreground: ff0000ff, font: *awesome}
-                      - string: {text: , foreground: ffa600ff, font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                - string: {text: "{capacity}%"}
+                      - string: {text: , foreground: ff0000ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                - string: {left-margin: 5, text: "{capacity}%"}
         content:
           map:
             conditions:
@@ -205,13 +206,13 @@ bar:
                     tag: capacity
                     items:
                       - string: {text: , foreground: ff0000ff, font: *awesome}
-                      - string: {text: , foreground: ffa600ff, font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                      - string: {text: , font: *awesome}
-                - string: {text: " {capacity}%"}
+                      - string: {text: , foreground: ff0000ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                      - string: {text: , foreground: 35D450ff, font: *awesome}
+                - string: {left-margin: 5, text: "{capacity}%"}
